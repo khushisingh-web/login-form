@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #111;
+  color: white;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  background: #000;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #00f7ff;
+}
+
+.logo {
+  color: #00f7ff;
+}
+
+/* Hero */
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero span {
+  color: #00f7ff;
+}
+
+.hero button {
+  padding: 10px 20px;
+  border: none;
+  background: #00f7ff;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* Sections */
+section {
+  padding: 60px 50px;
+  text-align: center;
+}
+
+.skills .progress {
+  background: #333;
+  height: 10px;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.skills .progress div {
+  height: 10px;
+  background: #00f7ff;
+}
+
+.html {
+  width: 90%;
+}
+
+.css {
+  width: 80%;
+}
+
+.project-box {
+  background: #222;
+  padding: 20px;
+  margin: 20px;
+  display: inline-block;
+  width: 250px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.project-box:hover {
+  transform: scale(1.05);
+}
+
+/* Contact */
+.contact form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: auto;
+}
+
+.contact input,
+.contact textarea {
+  margin: 10px 0;
+  padding: 10px;
+}
+
+footer {
+  padding: 20px;
+  background: #000;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .project-box {
+    width: 100%;
+  }
+}
